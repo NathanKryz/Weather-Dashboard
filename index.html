@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link>
     <link rel="stylesheet" href="./assets/stylesheet.css"></link>
-    <!-- Jquery, Bootstrap, Stylesheet, Moment links here-->
+    
 </head>
 <body>
     <!--A title banner for the site-->
-    <header class="jumbotron">
+    <header class="jumbotron bg-info">
 
-        <h1>Weather Forecast thingy</h1>
+        <h1>Weather Forecast</h1>
 
     </header>
     <!--A search bar with space under for history-->
     <div class="parent-container d-flex">
-    <div class="card" style="width: 18rem;">
+    <div class="card bg-light" style="width: 18rem;">
         <h2>Search for a city:</h2>
         <div class="card-body">
             <form class="form-inline">
@@ -39,23 +39,23 @@
 
       </div>
     <!--A main current day weather block-->
-    <div class="jumbotron w-50 ml-5" id="todayweather">
+    <div class="jumbotron w-50 ml-5 bg-info" id="todayweather">
         <h1 class="display-5 wdate"></h1>
         <hr class="my-1">
         <img class="wicon"></img>
         <hr class="my-1">
-        <p class="wtemp">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="wtemp">Temperature:</p>
         <hr class="my-1">
-        <p class="whumid">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="whumid">Humidity:</p>
         <hr class="my-1">
-        <p class="wwind">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="wwind">Wind Speed:</p>
         
       </div>
     </div>
     <!--5 day forecast cards-->
     <div class="container-fluid" style="margin-top: 5rem;">
         <div class="row w-100" id="forecast">
-           <div class="card col">
+           <div class="card col bg-info">
                 <div class="card-body">
                     <h2 class="wdate">Day of the week</h2>
                     <hr class="my-5">
@@ -68,7 +68,7 @@
                    <p class="wwind"> Wind Speed:</p>
                 </div>
           </div>
-          <div class="card col">
+          <div class="card col bg-info">
                 <div class="card-body">
                     <h2 class="wdate">Day of the week</h2>
                     <hr class="my-5">
@@ -81,7 +81,7 @@
                    <p class="wwind"> Wind Speed:</p>
                 </div>
             </div>
-            <div class="card col">
+            <div class="card col bg-info">
                 <div class="card-body">
                     <h2 class="wdate">Day of the week</h2>
                     <hr class="my-5">
@@ -94,7 +94,7 @@
                    <p class="wwind"> Wind Speed:</p>
                 </div>
             </div>
-            <div class="card col">
+            <div class="card col bg-info">
                 <div class="card-body">
                     <h2 class="wdate">Day of the week</h2>
                     <hr class="my-5">
@@ -107,7 +107,7 @@
                    <p class="wwind"> Wind Speed:</p>
                 </div>
             </div>
-            <div class="card col">
+            <div class="card col bg-info">
                 <div class="card-body">
                     <h2 class="wdate">Day of the week</h2>
                     <hr class="my-5">
@@ -122,9 +122,9 @@
             </div>
         </div>
       </div>
+      <!--Script links for Jquery and Javascript-->
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!--Added link to the javascript script associated with this-->
     <script src="./assets/script.js"></script>
 </body>
 </html>

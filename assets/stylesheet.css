@@ -1,3 +1,17 @@
+/* Remove buttons from lists and stylize the search history */
+
 *{
     list-style: none;
+}
+
+.prevsearch{
+    background-color: green;
+}
+
+.prevsearch:hover{
+    background-color: lightsalmon;
+}
+
+.prevsearch:active {
+    background-color: black;
 }
